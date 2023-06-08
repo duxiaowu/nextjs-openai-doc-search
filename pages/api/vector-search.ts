@@ -150,7 +150,7 @@ export default async function handler(req: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(completionOptions),
-    })
+    }) 
 
     if (!response.ok) {
       const error = await response.json()
