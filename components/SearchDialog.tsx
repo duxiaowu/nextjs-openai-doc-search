@@ -195,9 +195,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>OpenAI powered doc search</DialogTitle>
+            <DialogTitle>知识库搜索</DialogTitle>
             <DialogDescription>
-              Build your own ChatGPT style search with Next.js, OpenAI & Supabase.
+                 本地知识库搜索 
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -260,7 +260,7 @@ export function SearchDialog() {
                 />
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-100">
-                Or try:{' '}
+                试一试:{' '}
                 <button
                   type="button"
                   className="px-1.5 py-0.5
@@ -269,10 +269,10 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('Create a table called profiles with fields id, name, email')
+                    setSearch('注解是什么')
                   }
                 >
-                  Create a table called profiles with fields id, name, email
+                  注解是什么
                 </button>
               </div>
             </div>
